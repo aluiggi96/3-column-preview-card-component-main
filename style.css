@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+body{
+    font-family: Lexend Deca, sans-serif;
+    font-weight: 400;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.fullViewCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 768px;
+    overflow: hidden;
+    margin: 5rem 1rem;
+    border-radius: 1rem;
+}
+.card{
+    padding: 2.33rem;
+    display: grid;
+    align-content: space-between;
+    gap: 5rem;
+}
+.topofCard{
+    display: grid;
+    gap: 2rem;
+}
+.card1{
+    background-color: hsl(31, 77%, 52%)
+}
+.card2{
+    background-color: hsl(184, 100%, 22%);
+}
+.card3{
+    background-color: hsl(179, 100%, 13%);
+}
+.titleCard{
+    font-family: Big Shoulders Display;
+    color: hsl(0, 0%, 95%);
+}
+.description{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: .88rem;
+    line-height: 1.5rem;
+}
+.button{
+    font-size: .88rem;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    transition: all 500ms ease;
+}
+.card1 .button{
+    color: hsl(31, 77%, 52%);
+}
+.card2 .button{
+    color: hsl(184, 100%, 22%);
+}
+.card3 .button{
+    color: hsl(179, 100%, 13%);
+}
+.button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 638px) {
+    .fullViewCard{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        gap: 2rem;
+        padding: 3rem;
+    }
+    .titleCard{
+        font-size: 2.5rem;
+    }
+    .description{
+        font-size: 1.125rem;
+    }
+    
+}
